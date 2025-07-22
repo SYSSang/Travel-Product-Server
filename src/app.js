@@ -13,12 +13,13 @@ app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", (req, res) => {
-  res.send({ status: 1, message: "Hello, World!", data: "1" });
-});
-
+// 登录注册路由
 const userRoutes = require("./router/userRoutes");
 app.use("/api/user", userRoutes);
+
+// 上传图片
+const uploadPicRoutes = require("./router/uploadPicRoute");
+app.use("/api/upload", uploadPicRoutes);
 
 // 错误处理中间件
 app.use((err, req, res, next) => {
