@@ -1,0 +1,24 @@
+# 忽略 node_modules 目录
+node_modules/
+
+# 忽略环境变量文件
+.env
+
+# 忽略 VSCode 配置文件
+.vscode/
+
+# 忽略操作系统自动生成的文件
+.DS_Store         # MacOS
+Thumbs.db         # Windows
+
+# 忽略日志文件
+*.log
+
+# 忽略构建产物
+/dist/
+build/
+
+# 忽略其他临时文件或目录
+*.swp
+*.bak
+*.tmp
