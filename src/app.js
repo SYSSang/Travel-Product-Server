@@ -21,6 +21,14 @@ app.use("/api/user", userRoutes);
 const uploadPicRoutes = require("./router/uploadPicRoute");
 app.use("/api/upload", uploadPicRoutes);
 
+// 获取地理信息
+const geocodeRoutes = require("./router/geocodeRoutes");
+app.use("/geo", geocodeRoutes);
+
+// 上传文章
+const articleRoutes = require("./router/articlerRoutes");
+app.use("/api/article", articleRoutes);
+
 // 错误处理中间件
 app.use((err, req, res, next) => {
   console.error(err.stack);
