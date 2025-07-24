@@ -29,6 +29,10 @@ app.use("/geo", geocodeRoutes);
 const articleRoutes = require("./router/articlerRoutes");
 app.use("/api/article", articleRoutes);
 
+// 情绪分析
+const emotionRoutes = require("./router/emotionRoutes");
+app.use("/api/emotion", emotionRoutes);
+
 // 错误处理中间件
 app.use((err, req, res, next) => {
   console.error(err.stack);
