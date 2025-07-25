@@ -102,7 +102,7 @@ exports.storeOriginalEmotionData = async (req, res) => {
     return res.status(200).json({
       status: 1,
       message: "原始情绪数据存储成功",
-      data: { aid },
+      data: { aid, originalEmotionData },
     });
   } catch (err) {
     console.error("存储原始情绪失败：", err);
