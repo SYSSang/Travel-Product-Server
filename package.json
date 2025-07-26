@@ -13,6 +13,7 @@
   "license": "ISC",
   "packageManager": "pnpm@10.11.1",
   "dependencies": {
+    "@teamwork/websocket-json-stream": "^2.0.0",
     "axios": "^1.9.0",
     "bcryptjs": "^3.0.2",
     "body-parser": "^2.2.0",
@@ -21,7 +22,10 @@
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
     "multer": "^2.0.1",
-    "mysql2": "^3.14.1"
+    "mysql2": "^3.14.1",
+    "sharedb": "^5.2.2",
+    "ws": "^8.18.3",
+    "y-websocket": "^3.0.0"
   },
   "devDependencies": {
     "dotenv": "^16.5.0",
